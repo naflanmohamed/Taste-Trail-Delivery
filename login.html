@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyles.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Taste Trail">
+                <a href="index.html"><h1>Taste Trail</h1> </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="role">Role:</label>
+                <select id="role" name="role">
+                    <option value="admin">Admin</option>
+                    <option value="restaurant">Restaurant</option>
+                    <option value="customer">Customer</option>
+                </select>
+                <button type="submit">Login</button>
+
+                <p class="p-signup">Don't have an account? <a href="signup.html">Signup</a></p>
+                <p class="login-home"><a href="index.html">Home</a><p></p>
+            </form>
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Taste Trail. All rights reserved.</p>
+    </footer>
+
+    <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #044700;
+    color: white;
+    padding: 0px 20px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f0e7e2;
+}
+
+.hero {
+    background-image: image-set('banner.gif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-buttons .btn {
+    background-color: #044700;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 70px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #3E723B;
+    color: white
+}
+
+.hero-buttons .btn-secondary {
+    background-color: #ffffff;
+    color: #3E723B;
+    border: 2px solid #3E723B;
+}
+
+.hero-buttons .btn-secondary:hover {
+    background-color: #3E723B;
+}
+
+footer {
+    background-color: #274625;
+    color: white;
+    text-align: center;
+    padding: 1px 0 ;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="customerstyles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Taste Trail Logo">
+                <a href="index.html"><h1>Taste Trail</h1> </a>
+            </div>
+            <h1>Customer Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section" id="restaurantList">
+            <h2>Restaurants</h2>
+            <ul id="restaurants" class="restaurant-list">
+              
+            </ul>
+        </section>
+        <section class="section" id="menu">
+            <h2>Menu</h2>
+            <div class="menu-selection">
+                <select id="menuSelect" name="menu">
+  
+                </select>
+            </div>
+            <ul id="menuList" class="menu-list">
+            </ul>
+        </section>
+        <section class="section" id="orderPlacement">
+            <h2>Place Order</h2>
+            <form id="orderForm">
+                <label for="dish">Dish:</label>
+                <select id="dish" name="dish">
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+    <script src="customer.js"></script>
+</body>
+</html>
